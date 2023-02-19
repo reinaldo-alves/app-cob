@@ -1,0 +1,61 @@
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 97.5%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: DejaVuSerif;
+    text-shadow: 
+    -1px -1px 0px #002776, 
+    -1px 1px 0px #002776,                    
+    1px -1px 0px #002776,                  
+    1px 0px 0px #002776;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('https://quantocustaviajar.com/blog/wp-content/uploads/2019/02/parque-estadual-vila-velha-4.jpg');
+}
+
+.banner-2 {
+    background-image: url('https://www.a12.com/source/files/originals/Victor_Meirelles_-_Primeira_Missa-931456.jpg');
+}
+
+.banner-3 {
+    background-image: url('http://www.extingueincendio.com.br/wp-content/uploads/2015/09/os-10-maiores-fabricantes-de-extintores-650x427.jpg');
+}
+
+@media(max-width: 768px) {
+    .cards-content {
+        grid-template-columns: 1fr;  
+        margin-top: 30px;      
+    }
+    .card {
+        width: 97%;
+    }
+}

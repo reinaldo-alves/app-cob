@@ -1,0 +1,183 @@
+@font-face {
+  font-family: DejaVuSerif;
+  src: url('../../assets/DejaVuSerifCondensed-Bold.ttf') format('opentype');
+}
+
+#title-containerd {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#entrecontato {
+  font-family: DejaVuSerif;
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 
+      -1px -1px 0px #002776, 
+      -1px 1px 0px #002776,                    
+      1px -1px 0px #002776,                  
+      1px 0px 0px #002776;
+}
+
+.contact-container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contentd {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.subtitle {
+  margin: 0 0 20px 0;
+  font-family: DejaVuSerif;
+  font-size: 28px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 
+      -1px -1px 0px #002776, 
+      -1px 1px 0px #002776,                    
+      1px -1px 0px #002776,                  
+      1px 0px 0px #002776;
+}
+.social-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.redesocial {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.socialname {
+  margin: 0 0 0 15px;
+  font-family: DejaVuSerif;
+  font-size: 19px;
+  color: #fff;
+  text-shadow: 
+      -1px -1px 0px #002776, 
+      -1px 1px 0px #002776,                    
+      1px -1px 0px #002776,                  
+      1px 0px 0px #002776;
+}
+
+.logosocial {
+  width: 50px;
+  height: 50px;
+}
+
+.labela {
+  font-family: DejaVuSerif;
+  font-size: 15px;
+  color: #fff;
+  text-shadow: 
+      -1px -1px 0px #002776, 
+      -1px 1px 0px #002776,                    
+      1px -1px 0px #002776,                  
+      1px 0px 0px #002776;
+}
+
+input {
+  display: block;
+  padding: 0;
+}
+
+textarea {
+  padding: 0;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+.caixa {
+  width: 100%;
+  height: 25px;
+  font-family: DejaVuSerif;
+  font-size: 15px;
+  margin: 5px 0 0 0;
+}
+#message {
+  height: 80px;
+  resize: none;
+}
+.CheckBox-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+input.CheckBox {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px 0 0;
+}
+button {
+  width: 100px;
+  height: 30px;
+  background-color: red;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .8s;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  margin-top: 25px;
+}
+button:hover {
+  color: red;
+  background-color: #fff;
+}
+
+@media(max-width: 1024px) {
+  .contact-container {
+      height: 900px;
+  }
+  .contentd {
+      width: 100%;
+      height: 900px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 20px;
+  }
+  .social-container {
+      width: 90%;
+      align-items: center;
+  }
+  .form-container {
+      width: 90%;
+      align-items: center;
+  }
+}

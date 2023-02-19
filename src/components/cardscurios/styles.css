@@ -1,0 +1,40 @@
+.descriptionc {
+    color: #fff;
+    font-size: 18px;
+    font-family: DejaVuSerif;
+    width: 100%;
+    margin: 0;
+}
+.cardc {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 10px solid #ffdf00;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.imagec {
+    border-radius: 10px;
+    height: 150px;
+    aspect-ratio: 1 / 1;
+    margin-right: 15px;
+}
+
+@media(max-width: 768px) {
+    .descriptionc {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .cardc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagec {
+        height: 250px;
+        margin: 0;
+    }
+}

@@ -1,0 +1,51 @@
+@font-face {
+    font-family: DejaVuSerif;
+    src: url('../../assets/DejaVuSerifCondensed-Bold.ttf') format('opentype');
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('../../assets/Faixa.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+}
+nav{
+    width: 60%;
+}
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'DejaVuSerif';
+    text-shadow: 
+        -1px -1px 0px #002776, 
+        -1px 1px 0px #002776,                    
+        1px -1px 0px #002776,                  
+        1px 0px 0px #002776;
+}
+li:hover {
+    color: #ffdf00
+}
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+@media(max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+}

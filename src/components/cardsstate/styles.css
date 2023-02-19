@@ -1,0 +1,128 @@
+.actor-cards-containerb {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+.cardstate {
+    width: 97.5%;
+    aspect-ratio: 1 / 1;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: DejaVuSerif;
+    text-shadow: 
+    -1px -1px 0px #002776, 
+    -1px 1px 0px #002776,                    
+    1px -1px 0px #002776,                  
+    1px 0px 0px #002776;
+}
+.cardstate:hover {
+    transform: scale(1.02);
+}
+.banner-28 {
+    background-image: url('https://www.visitbrasil.com/wp-content/uploads/2021/08/Sao-Paulo-SP-Visit-Brasil-7-1-1024x683.jpg');
+}
+.banner-29 {
+    background-image: url('https://direcional.com.br/wp-content/uploads/2021/08/minas-gerais.jpg');
+}
+.banner-30 {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/98/Cidade_Maravilhosa.jpg');
+}
+.banner-4 {
+    background-image: url('https://blog.123milhas.com/wp-content/uploads/2022/04/conheca-estado-bahia-salvador-conexao123.png');
+}
+.banner-5 {
+    background-image: url('https://static.preparaenem.com/2021/06/cataratas-iguacu.jpg');
+}
+.banner-6 {
+    background-image: url('http://cloud.officetur.com/clientes/transhotel/images/promos/image_2932.jpg');
+}
+.banner-7 {
+    background-image: url('https://static.todamateria.com.br/upload/es/ta/estado-de-pernambuco-og.jpg');
+}
+.banner-8 {
+    background-image: url('https://magazine.zarpo.com.br/wp-content/uploads/2019/08/Praia-arte-gastronomia-e-kitesurf-confira-o-que-fazer-no-Ceara.jpg');
+}
+.banner-9 {
+    background-image: url('https://www.queroviajarmais.com/wp-content/uploads/2020/12/Mercado-Ver-o-Peso-Belem.jpg');
+}
+.banner-10 {
+    background-image: url('https://www.rvempreendimentos.com.br/wp-content/uploads/2022/03/morar-em-santa-catarina.jpg');
+}
+.banner-11 {
+    background-image: url('https://blog.123milhas.com/wp-content/uploads/2022/04/pontos-turisticos-goias-goiania-cidade-maior-area-verde-conexao123.jpg');
+}
+.banner-12 {
+    background-image: url('https://blog.123milhas.com/wp-content/uploads/2022/06/conheca-estado-maranhao-vista-aerea-rio-preguica-barreirinhas-conexao123.jpg');
+}
+.banner-13 {
+    background-image: url('https://www.wilsonsons.com.br/wp-content/uploads/2021/02/post_thumbnail-0c9584d9987fa67f8d6c335e443ebbd2.jpeg');
+}
+.banner-14 {
+    background-image: url('https://www.vidadeturista.com/wp-content/uploads/2020/07/ponte-vitoria-espirito-santo.jpg');
+}
+.banner-15 {
+    background-image: url('https://a.cdn-hotels.com/gdcs/production164/d1916/76adf5d6-a867-49c6-872d-524b3ca73da5.jpg');
+}
+.banner-16 {
+    background-image: url('https://classic.exame.com/wp-content/uploads/2021/03/FOTO6_PantanalMT.jpg?quality=70&strip=info&w=1024');
+}
+.banner-17 {
+    background-image: url('https://viagemegastronomia.cnnbrasil.com.br/wp-content/uploads/sites/5/2021/07/Morro-do-careca-Natal.jpg');
+}
+.banner-18 {
+    background-image: url('https://blog.hotelpontaverde.com.br/wp-content/uploads/2018/08/Praias-paradisi%CC%81acas-em-Alagoas-facebook.png');
+}
+.banner-19 {
+    background-image: url('https://www.maladeaventuras.com/wp-content/uploads/2021/03/pedra-sal-piaui%CC%81.jpg');
+}
+.banner-20 {
+    background-image: url('https://epsolution-mbst-pub-uw2.s3.us-west-2.amazonaws.com/cx/blendr/v2/image-brasilia-distrito-federal-df-jpg_1598468159286.jpeg');
+}
+.banner-21 {
+    background-image: url('https://destinosnotaveis.com.br/wp-content/uploads/2020/07/vista-aerea-pantanal-visitmsoficial-1024x655.jpg');
+}
+.banner-22 {
+    background-image: url('https://blog.123milhas.com/wp-content/uploads/2022/07/sergipe-conexao123.jpg');
+}
+.banner-23 {
+    background-image: url('https://images.mnstatic.com/bc/5d/bc5ddf8b3f70367861ec49f186f8077b.jpg?quality=75&format=pjpg&fit=crop&width=980&height=880&aspect_ratio=980%3A880');
+}
+.banner-24 {
+    background-image: url('https://www.maladeaventuras.com/wp-content/uploads/2022/07/pontos-turisticos-tocantins.jpg');
+}
+.banner-25 {
+    background-image: url('https://agencia.ac.gov.br/wp-content/uploads/2020/09/WhatsApp-Image-2020-01-06-at-09.15.29-1-C%C3%B3pia-1200x673.jpeg');
+}
+.banner-26 {
+    background-image: url('https://amapaecocamping.com.br/wp-content/uploads/2020/10/Macapa-capital-do-estado-do-Amapa-1024x768.jpeg');
+}
+.banner-27 {
+    background-image: url('https://storage.googleapis.com/wp-stateless-dtg/2015/11/roraima2.jpg');
+}
+
+@media(max-width: 768px) {
+    .cards-content {
+        grid-template-columns: 1fr;  
+        margin-top: 30px;      
+    }
+    .card {
+        width: 97%;
+    }
+}
