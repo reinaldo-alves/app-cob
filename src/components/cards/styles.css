@@ -1,11 +1,5 @@
-.actor-cards-container {
+.cards-container {
     width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.cards-content {
-    width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 20px;
@@ -51,7 +45,7 @@
 }
 
 @media(max-width: 768px) {
-    .cards-content {
+    .cards-container {
         grid-template-columns: 1fr;  
         margin-top: 30px;      
     }
