@@ -1,10 +1,9 @@
 import './App.css';
-import React from 'react';
 import Home from './pages/home';
 import Contato from './pages/contato/contato'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Fotos from './pages/fotos/fotos';
 import Curiosidades from './pages/curiosidades/curiosidades';
+import Municipios from './pages/municipios/municipios';
 
 function App() {
   
@@ -13,7 +12,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/contato' element={<Contato />}/>
-        <Route path='/fotos' element={<Fotos />}/>
+        <Route path='/municipios' element={<Municipios />}/>
         <Route path='/curiosidades' element={<Curiosidades />}/>
       </Routes>
     </BrowserRouter>

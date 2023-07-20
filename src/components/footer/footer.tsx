@@ -12,8 +12,8 @@ function Footer(){
                     <Link style={{ textDecoration: 'none' }} to='/'>
                         <li>Home</li>
                     </Link>
-                    <Link style={{ textDecoration: 'none' }} to='/fotos'>
-                        <li>Fotos</li>
+                    <Link style={{ textDecoration: 'none' }} to='/municipios'>
+                        <li>Municípios</li>
                     </Link>
                     <Link style={{ textDecoration: 'none' }} to='/curiosidades'>
                         <li>Curiosidades</li>                

@@ -21,7 +21,6 @@ function Trailer(){
     async function loadVideo(url: string) {
         try {
             const response = await axios.get(url)
-            console.log(response.data.items[0])
             return response.data.items[0]
         } catch(error) {
             console.log(error)
@@ -39,8 +38,6 @@ function Trailer(){
         fetchData();
     }, [])
 
-    console.log(videoData);
-
     return (
         <div className="trailer-content" >
             <iframe src={`https://www.youtube.com/embed/${videoData.id}`} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
@@ -51,7 +48,7 @@ function Trailer(){
                 <p className="video-description" >
                     {videoData.snippet? videoData.snippet.description : ''}
                 </p>
-                <a href="https://youtu.be/Ch9N7LmRsFE" target="_blank" rel="noreferrer">
+                <a href={`https://youtu.be/${videoData.id}`} target="_blank" rel="noreferrer">
                     <button className="button">Assista no Youtube</button>
                 </a>
             </div>
