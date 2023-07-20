@@ -9,6 +9,7 @@
     flex-direction: column;
     align-items: center;
     margin: 30px auto;
+    gap: 20px;
 }
 
 .intro-title {

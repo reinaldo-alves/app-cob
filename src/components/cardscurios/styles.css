@@ -6,7 +6,7 @@
     margin: 0;
 }
 .cardc {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;

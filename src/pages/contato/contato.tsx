@@ -7,11 +7,7 @@ function Contato(){
     return (
         <>
             <Header />
-            <div id="title-containerd" >
-                <h1 id="entrecontato">
-                    Entre em contato conosco
-                </h1>
-            </div>
+            <h1 id="entrecontato">Entre em contato conosco</h1>
             <div className='contact-container'>
                 <div className='contentd'>
                     <div className='social-container'>
@@ -39,14 +35,16 @@ function Contato(){
                             <input className='caixa' type="email" name="email" placeholder="Digite um email válido" />
                             <br />
                             <label className='labela'>Mensagem</label>
-                            <textarea className='caixa' name="message" placeholder="Digite sua mensagem aqui"></textarea>
+                            <textarea className='caixa message' name="message" placeholder="Digite sua mensagem aqui"></textarea>
                             <br />
                             <div className="CheckBox-container">
                                 <input className="CheckBox" type="CheckBox" name="CheckBox" />
                                 <label className='labela'>Aceito receber emails com atualizações de conteúdo</label>
                             </div>
                             <br />
-                            <button type="submit">Enviar</button>
+                            <div className="button-container">
+                                <button type="submit">Enviar</button>
+                            </div>
                         </form>
                     </div>
                 </div>

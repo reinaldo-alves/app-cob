@@ -6,7 +6,14 @@ import Cards from '../../components/cards'
 import Trailer from '../../components/trailer/trailer'
 
 function Home(){
-    
+    const cardsData = [
+        {name: 'Lugares curiosos', image: 'https://quantocustaviajar.com/blog/wp-content/uploads/2019/02/parque-estadual-vila-velha-4.jpg'},
+        {name: 'Histórias interessantes', image: 'https://www.a12.com/source/files/originals/Victor_Meirelles_-_Primeira_Missa-931456.jpg'},
+        {name: 'Listas - Top10', image: 'http://www.extingueincendio.com.br/wp-content/uploads/2015/09/os-10-maiores-fabricantes-de-extintores-650x427.jpg'}
+    ]
+
+    console.log(cardsData)
+
     return (
         <>
             <Header />
@@ -27,7 +34,11 @@ function Home(){
             </div>
             <div className="section-container">
                 <h2 className="section-title">No nosso canal você encontra...</h2>
-                <Cards />
+                <div className="cards-container">
+                    {cardsData.map((item) => (
+                        <Cards name={item.name} image={item.image} />
+                    ))}
+                </div>
             </div>
             <Footer />
         </>

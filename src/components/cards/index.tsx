@@ -1,13 +1,16 @@
 import './styles.css'
 
-function Cards(){
+interface IProps {
+    name: string,
+    image: string
+}
+
+function Cards(props: IProps){
     return (
-        <div className="cards-container" >
-            <div className="card banner-1">Lugares curiosos</div>
-            <div className="card banner-2">Histórias interessantes</div>
-            <div className="card banner-3">Listas - Top10</div>
+        <div className="card" style={{backgroundImage: `url(${props.image})`}}>
+            <span>{props.name}</span>
         </div>
-    )
+    )  
 }
 
 export default Cards

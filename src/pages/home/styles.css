@@ -24,7 +24,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 40px auto;
+    margin: 40px auto 60px auto;
+    gap: 20px;
 }
 
 h2 {
@@ -79,19 +80,31 @@ a:link {
     text-decoration: none;
 }
 
+.cards-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
 @media(max-width: 768px) {
     #banner {
         height: 400px;
     }
+
     .about-container {
         text-align: center;
     }
+
     h2 {
         text-align: center;
     }
+
     #sobre {
         height: 520px;
     }
+
     .content {
         width: 95%;
         display: flex;
@@ -99,9 +112,11 @@ a:link {
         align-items: center;
         justify-content: center;
     }
+
     .trailer {
         width: 100%;
     }
+
     #sinopse {
         width: 95%;
         display: flex;
@@ -109,8 +124,14 @@ a:link {
         justify-content: space-between;
         margin-left: 0;
     }
+
     .button {
         width: 100%;
         margin-top: 30px;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;  
+        margin-top: 30px;      
     }
 }
