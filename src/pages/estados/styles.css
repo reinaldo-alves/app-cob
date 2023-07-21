@@ -12,9 +12,9 @@
     justify-content: center;
 }
 
-.flag-map-mun {
-    width: 40%;
-    min-width: 40%;
+.flag-map {
+    width: 30%;
+    min-width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,12 +30,12 @@
     width: 100%;
 }
 
-.info-mun {
+.info-state {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 5px;
-    font-size: 16px;
+    font-size: 14px;
     text-shadow: 
         -1px -1px 0px #002776, 
         -1px 1px 0px #002776,                    
@@ -43,43 +43,49 @@
         1px 0px 0px #002776;
 }
 
-.region-container {
+.mun-container {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 }
 
-.region-list {
+.mun-container input {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px
-}
-
-.region-list h3 {
+    height: 30px;
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+    outline: none;
     font-family: DejaVuSerif;
-    font-size: 24px;
-    color: #fff;
-    text-shadow: 
-        -1px -1px 0px #002776, 
-        -1px 1px 0px #002776,                    
-        1px -1px 0px #002776,                  
-        1px 0px 0px #002776;
+    color: #002776;
+    font-size: 14px;
 }
 
-.region-list span {
+.mun-list {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px 10px;
+}
+
+.mun-list span {
+    width: 250px;
     padding: 5px;
     border-radius: 5px;
     text-align: center;
+    text-decoration: underline;
     cursor: pointer;
-    font-size: 18px;
+}
+
+.mun-list span:hover {
+    outline: 1px solid #fff;
+    background-color: #002776;
 }
 
 @media(max-width: 890px) {
-    .region-list {
+    .mun-list {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;     

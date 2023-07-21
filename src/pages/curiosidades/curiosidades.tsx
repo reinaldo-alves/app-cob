@@ -47,8 +47,8 @@ function Curiosidades(){
             <Intro title={title} text={text}/>
             <div className="curios-card-container">
                 <div className="cards-contentc">
-                    {curiosContent.map((item) => (
-                        <CardsCurios image={item.image} text={item.text} />
+                    {curiosContent.map((item, index) => (
+                        <CardsCurios key={index} image={item.image} text={item.text} />
                     ))}
                 </div>
             </div>

@@ -1,0 +1,21 @@
+.cards-state-container {
+    margin: 40px auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+    justify-content: center;
+}
+
+@media(max-width: 768px) {
+    .cards-state-container {
+        grid-template-columns: 1fr 1fr;        
+    }
+}
+
+@media(max-width: 400px) {
+    .cards-state-container {
+        grid-template-columns: 1fr;        
+    }
+}

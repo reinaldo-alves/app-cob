@@ -29,12 +29,11 @@
     color: #fff;
     font-size: 18px;
     font-family: DejaVuSerif;
+    text-align: center;
 }
 
 @media(max-width: 768px) {
     .intro-description {
         width: 100%;
-        text-align: center;
     }
-
 }
