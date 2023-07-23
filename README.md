@@ -4,11 +4,11 @@
 
 Este é um website que apresenta o canal do Youtube Conhecendo o Brasil, um canal de curiosidades. Na página inicial, a aplipação consome a API do Youtube para mostrar informações sobre um vídeo selecionado do canal, enquanto que na página Municípios há um guia que mostra dados de todos os municípios brasileiros, obtidos a partir da API do IBGE. O website também tem uma seção de curiosidades e links para as redes onde são postados os conteúdos principais. O site Conhecendo o Brasil foi desenvolvido com o framework React e estilizado com CSS.
 
-O website está hospedado no GitHub Pages, [clique aqui](https://reinaldo-alves.github.io/site-CoB/) para acessar.
+O website está hospedado no Vercel, [clique aqui](https://conhecendoobrasil.vercel.app/) para acessar.
 
 ## Como utilizar o sistema
 
-Primeiramente, é preciso acessar a página através [deste link](https://reinaldo-alves.github.io/site-CoB/).
+Primeiramente, é preciso acessar a página através [deste link](https://conhecendoobrasil.vercel.app/).
 
 Para assistir o vídeo selecionado do canal que aparece na página inicial, basta clicar no botão que aparece no meio do vídeo.
 Para acessar o guia de municípios, basta clicar no link 'Municípios' que está no menu superior (ou inferior, no caso de dispositivos móveis). Em seguida, selecione um estado para exibir algumas informações sobre ele (mapa, bandeira, área, etc.) e a sua lista de municípios. Por fim, escolha um município clicando sobre o nome dele para exibir informações mais detalhadas.
