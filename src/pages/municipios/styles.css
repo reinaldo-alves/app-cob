@@ -3,7 +3,14 @@
     src: url('../../assets/DejaVuSerifCondensed-Bold.ttf') format('opentype');
 }
 
-.info-state-container {
+.back-link {
+    width: 320px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.info-mun-container {
     margin: 40px auto;
     width: 90%;
     display: flex;
@@ -74,24 +81,16 @@
     padding: 5px;
     border-radius: 5px;
     text-align: center;
-    cursor: pointer;
     font-size: 18px;
 }
 
-@media(max-width: 890px) {
-    .region-list {
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;     
-    }
-}
-
 @media(max-width: 768px) {
-    .info-state-container {
-        flex-direction: column;      
+    .info-mun-container {
+        flex-direction: column;     
+        align-items: center;
     }
 
-    .flag-map {
+    .flag-map-mun {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -99,5 +98,14 @@
 
     .info-state {
         grid-area: 2 / 1 / 3 / 3;
+    }
+}
+
+@media(max-width: 655px) {
+    .flag-map-mun {
+        width: 100%;
+        max-width: 500px;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }

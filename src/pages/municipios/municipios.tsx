@@ -2,7 +2,7 @@ import Header from '../../components/header/header'
 import Footer from '../../components/footer/footer'
 import Intro from "../../components/intro/intro";
 import './styles.css'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { IDistrito, IMeta, IMunicipios, ISubdistrito } from '../../types/types';
 import axios from 'axios';
@@ -109,7 +109,7 @@ function Municipios(){
         <>
             <Header />
             <Intro title={`${munData.nome} - ${munData.microrregiao? munData.microrregiao.mesorregiao.UF.sigla : ''}`} text={''}/>
-            <div className="info-state-container">
+            <div className="info-mun-container">
                 <div className="flag-map-mun">
                     <MapSVG width='100%' name={munData.nome} link={`https://servicodados.ibge.gov.br/api/v3/malhas/municipios/${params.idmun}`} />
                     <div className="info-mun">
@@ -139,6 +139,9 @@ function Municipios(){
                     </div>
                 </div>
             </div>
+            <Link style={{ textDecoration: 'none' }} to={`/municipios/${munData.microrregiao? munData.microrregiao.mesorregiao.UF.sigla : ''}`}>
+                <button className='back-link'>{`< Voltar para ${munData.microrregiao? munData.microrregiao.mesorregiao.UF.nome : ''}`}</button>
+            </Link>
             <Footer />
         </>
     )
